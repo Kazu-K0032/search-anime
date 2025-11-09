@@ -125,3 +125,49 @@ Video URL: https://media.trace.moe/video/...
 
 ==================================================
 ```
+
+### Ximilar Comics CLI
+
+A CLI tool to identify comic works from image files. Uses the Ximilar Comics API to retrieve detailed information such as work name, title, publication date, issue number, publisher, etc.
+
+```bash
+python ximilar_comics_cli.py <image_file_path>
+```
+
+#### Usage Example
+
+```bash
+# Search by specifying an image file
+python ximilar_comics_cli.py /path/to/image.jpg
+
+# Search results will be displayed
+# Information such as work name, title, similarity, publisher, publication date, issue number, etc. will be shown
+```
+
+#### Output Example
+
+```
+Search Results (top 3 / total 5):
+
+==================================================
+
+[1]
+Title: Work Name
+Title: Title
+Similarity: 95.00%
+Publisher: Publisher Name
+Publication Date: January 2024
+Issue Number: 1
+--------------------------------------------------
+
+[2]
+Title: Another Work Name
+Title: Another Title
+Similarity: 87.20%
+Publisher: Another Publisher
+--------------------------------------------------
+
+==================================================
+```
+
+**Note**: Using the Ximilar Comics API requires an API token. See the [Ximilar Comics API documentation](./en-ximilar-comics-api.md) for details.
