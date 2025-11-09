@@ -79,3 +79,49 @@ URL: https://example2.com
 
 ==================================================
 ```
+
+### trace.moe CLI
+
+A CLI tool to identify anime works from image files. Specialized for anime scene search, it can also retrieve episode information and scene timing information.
+
+```bash
+python tracemoe_cli.py <image_file_path>
+```
+
+#### Usage Example
+
+```bash
+# Search by specifying an image file
+python tracemoe_cli.py /path/to/image.jpg
+
+# Search results will be displayed
+# Information such as work name, episode, similarity, scene timing, video URL, etc. will be shown
+```
+
+#### Output Example
+
+```
+Search Results (3 items):
+
+==================================================
+
+[1]
+Title: Anime Title
+Similarity: 95.00%
+Episode: 1
+Scene Time: 00:12 - 00:15
+Video URL: https://media.trace.moe/video/...
+Image URL: https://media.trace.moe/image/...
+AniList ID: 12345
+--------------------------------------------------
+
+[2]
+Title: Another Anime Title
+Similarity: 87.20%
+Episode: 5
+Scene Time: 01:23 - 01:26
+Video URL: https://media.trace.moe/video/...
+--------------------------------------------------
+
+==================================================
+```
